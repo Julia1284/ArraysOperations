@@ -10,6 +10,8 @@ public class _Main {
         System.out.println(ArraysOperation.oddNumber(arr));
         System.out.println(ArraysOperation.primeNumber(arr));
         System.out.println(ArraysOperation.sumNumbers(arr));
+        System.out.println(ArraysOperation.diffEvenOdd(arr));
+        System.out.println(ArraysOperation.checkZero(arr));
     }
 }
 

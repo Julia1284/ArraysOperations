@@ -51,6 +51,30 @@ public class ArraysOperation {
         }
         return sumResult;
     }
+
+    public static int diffEvenOdd(int[] arr) {
+        int sumEven = 0;
+        int sumOdd = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                sumEven += arr[i];
+            } else {
+                sumOdd += arr[i];
+            }
+        }
+        return sumEven - sumOdd;
+    }
+
+    public static int checkZero(int[] arr) {
+        int countZero = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 0) {
+                countZero++;
+            }
+        }
+        return countZero;
+    }
+
 }
 
 
