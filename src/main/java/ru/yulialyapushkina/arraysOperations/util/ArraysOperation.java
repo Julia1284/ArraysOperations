@@ -1,5 +1,7 @@
 package ru.yulialyapushkina.arraysOperations.util;
 
+import java.util.Arrays;
+
 public class ArraysOperation {
     public static int calcEvenNumbers(int[] arr) {
         int counter = 0;
@@ -89,9 +91,7 @@ public class ArraysOperation {
                 }
             }
         }
-        for (int i : arr)
-            System.out.print(i + " ");
-        System.out.println();
+        System.out.println(Arrays.toString(arr));
     }
 }
 
