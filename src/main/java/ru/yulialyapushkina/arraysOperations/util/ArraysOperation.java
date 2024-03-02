@@ -1,7 +1,7 @@
 package ru.yulialyapushkina.arraysOperations.util;
 
 public class ArraysOperation {
-    public static int evenNumber(int[] arr) {
+    public static int calcEvenNumbers(int[] arr) {
         int counter = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
@@ -11,7 +11,7 @@ public class ArraysOperation {
         return counter;
     }
 
-    public static int oddNumber(int[] arr) {
+    public static int calcOddNumbers(int[] arr) {
         int counter = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
@@ -34,7 +34,7 @@ public class ArraysOperation {
         return true;
     }
 
-    public static int primeNumber(int[] arr) {
+    public static int calcPrimeNumbers(int[] arr) {
         int counter = 0;
         for (int i = 0; i < arr.length; i++) {
             if (isSimple(arr[i])) {
@@ -44,7 +44,7 @@ public class ArraysOperation {
         return counter;
     }
 
-    public static int sumNumbers(int[] arr) {
+    public static int calcSumNumbers(int[] arr) {
         int sumResult = 0;
         for (int i = 0; i < arr.length; i++) {
             sumResult += arr[i];
@@ -52,7 +52,7 @@ public class ArraysOperation {
         return sumResult;
     }
 
-    public static int diffEvenOdd(int[] arr) {
+    public static int calcDiffEvenOdd(int[] arr) {
         int sumEven = 0;
         int sumOdd = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -75,6 +75,24 @@ public class ArraysOperation {
         return countZero;
     }
 
+    public static void sortBubble(int[] arr) {
+        int temp;
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    isSorted = false;
+                }
+            }
+        }
+        for (int i : arr)
+            System.out.print(i + " ");
+        System.out.println();
+    }
 }
 
 
