@@ -78,7 +78,6 @@ public class ArraysOperation {
     }
 
     public static void sortBubble(int[] arr) {
-        int temp;
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
