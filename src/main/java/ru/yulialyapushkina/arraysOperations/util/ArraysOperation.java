@@ -68,13 +68,13 @@ public class ArraysOperation {
     }
 
     public static int checkZero(int[] arr) {
-        int countZero = 0;
+        int amountZero = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
-                countZero++;
+                amountZero++;
             }
         }
-        return countZero;
+        return amountZero;
     }
 
     public static void sortBubble(int[] arr) {
@@ -84,9 +84,9 @@ public class ArraysOperation {
             isSorted = true;
             for (int i = 0; i < arr.length - 1; i++) {
                 if (arr[i] > arr[i + 1]) {
-                    temp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = temp;
+                    arr[i] = arr[i] + arr[i + 1];
+                    arr[i + 1] = arr[i] - arr[i + 1];
+                    arr[i] = arr[i] - arr[i + 1];
                     isSorted = false;
                 }
             }
